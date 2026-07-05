@@ -105,6 +105,8 @@
             android:id="@+id/btnCreateAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_50"
+            android:textColor="@color/primary_500"
             android:text="@string/createAccount" />
     </LinearLayout>
 

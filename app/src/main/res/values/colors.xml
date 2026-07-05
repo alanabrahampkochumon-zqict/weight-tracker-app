@@ -2,4 +2,55 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="slate_50">#F7F7FF</color>
+    <color name="slate_100">#E1E1E8</color>
+    <color name="slate_200">#CBCBD1</color>
+    <color name="slate_300">#B6B5B9</color>
+    <color name="slate_400">#A09FA2</color>
+    <color name="slate_500">#8A898B</color>
+    <color name="slate_600">#747474</color>
+    <color name="slate_700">#5E5E5D</color>
+    <color name="slate_800">#484846</color>
+    <color name="slate_900">#33322E</color>
+    <color name="slate_950">#1D1C17</color>
+    <color name="slate_1000">#070600</color>
+
+    <!-- Primary Palette -->
+    <color name="primary_50">#e9f1fe</color>
+    <color name="primary_100">#d3e4fe</color>
+    <color name="primary_200">#a2c9fd</color>
+    <color name="primary_300">#63b0fc</color>
+    <color name="primary_400">#2196e9</color> <!-- PURE -->
+    <color name="primary_500">#1a7cc1</color>
+    <color name="primary_600">#12629a</color>
+    <color name="primary_700">#0b4a76</color>
+    <color name="primary_800">#053353</color>
+    <color name="primary_900">#021d32</color>
+    <color name="primary_950">#011222</color>
+
+    <!-- Success Palette -->
+    <color name="mint_50">#cffee6</color>
+    <color name="mint_100">#8ffdcc</color>
+    <color name="mint_200">#3becac</color>
+    <color name="mint_300">#34d399</color> <!-- PURE -->
+    <color name="mint_400">#2ab281</color>
+    <color name="mint_500">#219269</color>
+    <color name="mint_600">#187352</color>
+    <color name="mint_700">#0f563c</color>
+    <color name="mint_800">#083d29</color>
+    <color name="mint_900">#032316</color>
+    <color name="mint_950">#01150c</color>
+
+    <!-- Error Palette -->
+    <color name="pink_50">#ffecee</color>
+    <color name="pink_100">#ffdadd</color>
+    <color name="pink_200">#feb2ba</color>
+    <color name="pink_300">#fe8796</color>
+    <color name="pink_400">#fe526f</color> <!-- PURE -->
+    <color name="pink_500">#eb074b</color>
+    <color name="pink_600">#bd053b</color>
+    <color name="pink_700">#91032b</color>
+    <color name="pink_800">#67011c</color>
+    <color name="pink_900">#40000e</color>
+    <color name="pink_950">#2c0007</color>
 </resources>
