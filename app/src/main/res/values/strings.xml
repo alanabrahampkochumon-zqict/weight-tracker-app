@@ -63,4 +63,7 @@
     <string name="weight_lost_pattern">0.0KG lost of 0.0 KG</string>
     <string name="update_goal">Update Goal</string>
     <string name="sms_permission_required">SMS Permission Required</string>
+    <string name="tvHomeUsername">Hannah</string>
+    <string name="greeting">Good morning</string>
+    <string name="track_weight">Track Weight</string>
 </resources>
