@@ -51,4 +51,7 @@
     <string name="your_progress_so_far">Your Progress so Far</string>
     <string name="placeholder_date">Mar 20, 2026</string>
     <string name="placeholder_weight">65.50 KG</string>
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="invalid_username">Invalid username! Try creating an account</string>
+    <string name="alt_hero_image">Hero Image</string>
 </resources>

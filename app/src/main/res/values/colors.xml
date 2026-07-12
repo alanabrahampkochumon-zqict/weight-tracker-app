@@ -42,15 +42,15 @@
     <color name="mint_950">#01150c</color>
 
     <!-- Error Palette -->
-    <color name="pink_50">#ffecee</color>
-    <color name="pink_100">#ffdadd</color>
-    <color name="pink_200">#feb2ba</color>
-    <color name="pink_300">#fe8796</color>
-    <color name="pink_400">#fe526f</color> <!-- PURE -->
-    <color name="pink_500">#eb074b</color>
-    <color name="pink_600">#bd053b</color>
-    <color name="pink_700">#91032b</color>
-    <color name="pink_800">#67011c</color>
-    <color name="pink_900">#40000e</color>
-    <color name="pink_950">#2c0007</color>
+    <color name="red_50">#ffecee</color>
+    <color name="red_100">#ffdadd</color>
+    <color name="red_200">#feb2ba</color>
+    <color name="red_300">#fe8796</color>
+    <color name="red_400">#fe526f</color> <!-- PURE -->
+    <color name="red_500">#eb074b</color>
+    <color name="red_600">#bd053b</color>
+    <color name="red_700">#91032b</color>
+    <color name="red_800">#67011c</color>
+    <color name="red_900">#40000e</color>
+    <color name="red_950">#2c0007</color>
 </resources>
