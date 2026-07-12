@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.SEND_SMS"
+        tools:ignore="SmsAndCallLogPolicy" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WeightTracker">
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.WeightTracker"
             android:windowSoftInputMode="adjustResize">

@@ -29,22 +29,23 @@
         android:layout_height="wrap_content"
         android:text="@string/placeholder_date"
         android:textAlignment="textEnd"
-        android:textColor="@color/slate_700"
+        android:textColor="@color/slate_800"
         android:textSize="11sp"
         app:layout_constraintStart_toStartOf="@+id/tvHistoryItemWeight"
         app:layout_constraintTop_toBottomOf="@+id/tvHistoryItemWeight" />
 
     <ImageButton
-        android:id="@+id/btnHistoryItemDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/transparent"
-        app:tint="@color/red_400"
+        android:id="@+id/btnWeightItemDelete"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
         android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvHistoryItemDate"
+        android:backgroundTint="@color/transparent"
+        android:contentDescription="@string/delete_weight_recording"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvHistoryItemWeight"
-        app:layout_constraintTop_toTopOf="@+id/tvHistoryItemWeight"
-        app:srcCompat="@drawable/delete_icon" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/delete_icon"
+        app:tint="@color/red_400" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
