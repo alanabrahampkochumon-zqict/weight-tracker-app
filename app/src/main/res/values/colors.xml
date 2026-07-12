@@ -17,30 +17,32 @@
     <color name="slate_1000">#070600</color>
 
     <!-- Primary Palette -->
-    <color name="primary_50">#e9f1fe</color>
-    <color name="primary_100">#d3e4fe</color>
-    <color name="primary_200">#a2c9fd</color>
-    <color name="primary_300">#63b0fc</color>
-    <color name="primary_400">#2196e9</color> <!-- PURE -->
-    <color name="primary_500">#1a7cc1</color>
-    <color name="primary_600">#12629a</color>
-    <color name="primary_700">#0b4a76</color>
-    <color name="primary_800">#053353</color>
-    <color name="primary_900">#021d32</color>
-    <color name="primary_950">#011222</color>
+    <color name="primary_50">#edf0fe</color>
+    <color name="primary_100">#dee5fd</color>
+    <color name="primary_200">#bccbfa</color>
+    <color name="primary_300">#98b2f8</color>
+    <color name="primary_400">#6a96f5</color>
+    <color name="primary_500">#317ef1</color>
+    <color name="primary_600">#2768c9</color> <!-- PURE -->
+    <color name="primary_700">#1b4e9a</color>
+    <color name="primary_800">#10356d</color>
+    <color name="primary_900">#061d40</color>
+    <color name="primary_950">#03132d</color>
+
 
     <!-- Success Palette -->
-    <color name="mint_50">#cffee6</color>
-    <color name="mint_100">#8ffdcc</color>
-    <color name="mint_200">#3becac</color>
-    <color name="mint_300">#34d399</color> <!-- PURE -->
-    <color name="mint_400">#2ab281</color>
-    <color name="mint_500">#219269</color>
-    <color name="mint_600">#187352</color>
-    <color name="mint_700">#0f563c</color>
-    <color name="mint_800">#083d29</color>
-    <color name="mint_900">#032316</color>
-    <color name="mint_950">#01150c</color>
+    <color name="mint_50">#d1fee4</color>
+    <color name="mint_100">#7ffdbe</color>
+    <color name="mint_200">#3ee69e</color>
+    <color name="mint_300">#35cb8b</color> <!-- PURE -->
+    <color name="mint_400">#2db078</color>
+    <color name="mint_500">#259565</color>
+    <color name="mint_600">#1d7d54</color>
+    <color name="mint_700">#135e3e</color>
+    <color name="mint_800">#0a3f28</color>
+    <color name="mint_900">#042516</color>
+    <color name="mint_950">#02170c</color>
+
 
     <!-- Error Palette -->
     <color name="red_50">#ffecee</color>
