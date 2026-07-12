@@ -5,15 +5,15 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingVertical="12dp"
-    android:paddingStart="8dp">
+    android:paddingVertical="16dp"
+    android:paddingEnd="16dp"
+    tools:ignore="RtlSymmetry">
 
 
     <TextView
         android:id="@+id/tvHistoryItemWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:text="@string/placeholder_weight"
         android:textAlignment="center"
         android:textColor="@color/slate_800"
@@ -23,13 +23,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/iconProgress"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        app:layout_constraintStart_toStartOf="@id/tvHistoryItemWeight"
-        app:layout_constraintTop_toBottomOf="@id/tvHistoryItemWeight" />
-
     <TextView
         android:id="@+id/tvHistoryItemDate"
         android:layout_width="wrap_content"
@@ -37,23 +30,21 @@
         android:text="@string/placeholder_date"
         android:textAlignment="textEnd"
         android:textColor="@color/slate_700"
-        android:textSize="10sp"
-        app:layout_constraintStart_toEndOf="@id/tvHistoryItemWeight"
-        app:layout_constraintTop_toBottomOf="@id/tvHistoryItemWeight"
-        tools:layout_editor_absoluteX="297dp"
-        tools:layout_editor_absoluteY="62dp" />
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/tvHistoryItemWeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvHistoryItemWeight" />
 
     <ImageButton
         android:id="@+id/btnHistoryItemDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/tvHistoryItemDate"
-        app:layout_constraintStart_toEndOf="@id/tvHistoryItemWeight"
-        app:layout_constraintTop_toTopOf="@id/tvHistoryItemWeight"
-        app:srcCompat="@drawable/delete_icon"
-        android:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="411dp"
-        tools:layout_editor_absoluteY="24dp" />
+        android:backgroundTint="@color/transparent"
+        app:tint="@color/red_400"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHistoryItemDate"
+        app:layout_constraintStart_toEndOf="@+id/tvHistoryItemWeight"
+        app:layout_constraintTop_toTopOf="@+id/tvHistoryItemWeight"
+        app:srcCompat="@drawable/delete_icon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
