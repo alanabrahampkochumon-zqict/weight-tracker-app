@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="32dp">
+
+    <TextView
+        android:id="@+id/tvGoalHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading_user_details"
+        android:textColor="@color/slate_900"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/tvGoalHeading"
+        app:layout_constraintTop_toBottomOf="@id/tvGoalHeading">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_fullname"
+            android:textSize="14sp"
+            android:textColor="@color/slate_800"/>
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:autofillHints="none"
+            android:hint="@string/hint_fullname"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCurrentWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/layoutName"
+        app:layout_constraintTop_toBottomOf="@id/layoutName">
+
+        <TextView
+            android:id="@+id/tvLabelCurrentWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_current_weight"
+            android:textColor="@color/slate_800"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etCurrentWeight"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:autofillHints="none"
+            android:hint="@string/weight_hint"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@id/tvCurrentWeightUnit"
+            app:layout_constraintStart_toStartOf="@+id/tvLabelCurrentWeight"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelCurrentWeight" />
+
+        <TextView
+            android:id="@+id/tvCurrentWeightUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kg"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/etCurrentWeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etCurrentWeight" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutGoalWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textColor="@color/slate_800"
+        app:layout_constraintStart_toStartOf="@id/layoutCurrentWeight"
+        app:layout_constraintTop_toBottomOf="@id/layoutCurrentWeight">
+
+        <TextView
+            android:id="@+id/tvLabelGoalWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_goal_weight"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etGoalWeight"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:autofillHints="none"
+            android:hint="@string/weight_hint"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@id/tvGoalWeightUnit"
+            app:layout_constraintStart_toStartOf="@+id/tvLabelGoalWeight"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelGoalWeight" />
+
+        <TextView
+            android:id="@+id/tvGoalWeightUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kg"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/etGoalWeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/etGoalWeight" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="320dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/get_started"
+        app:layout_constraintEnd_toEndOf="@id/layoutGoalWeight"
+        app:layout_constraintStart_toStartOf="@id/layoutGoalWeight"
+        app:layout_constraintTop_toBottomOf="@id/layoutGoalWeight" />
+</androidx.constraintlayout.widget.ConstraintLayout>

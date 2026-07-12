@@ -28,4 +28,10 @@
     <string name="add_your_weight">Record Today\'s Weight</string>
     <string name="weight_hint">50.5</string>
     <string name="kg">KG</string>
+    <string name="get_started">Get Started!</string>
+    <string name="hint_fullname">Hannah</string>
+    <string name="label_fullname">What should we call you?</string>
+    <string name="heading_user_details">Enter your details</string>
+    <string name="label_goal_weight">What is your goal weight?</string>
+    <string name="label_current_weight">How much do you weigh right now?</string>
 </resources>
