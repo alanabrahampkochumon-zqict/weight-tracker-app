@@ -49,7 +49,7 @@
         android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="4dp"
         android:text="@string/hint_username"
         android:textColor="@color/slate_900"
@@ -90,7 +90,7 @@
             android:id="@+id/tvWeightChange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="2dp"
             android:text="@string/weight_lost_pattern"
             app:layout_constraintStart_toStartOf="@+id/progressWeightChange"
             app:layout_constraintTop_toBottomOf="@+id/progressWeightChange" />
