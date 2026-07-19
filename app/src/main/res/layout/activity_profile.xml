@@ -156,5 +156,17 @@
             tools:ignore="UseSwitchCompatOrMaterialXml" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/logout"
+        android:textColor="@color/red_500"
+        android:backgroundTint="@color/red_50"
+        app:layout_constraintEnd_toEndOf="@+id/notificationSettingLayout"
+        app:layout_constraintStart_toStartOf="@+id/notificationSettingLayout"
+        app:layout_constraintTop_toBottomOf="@+id/notificationSettingLayout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

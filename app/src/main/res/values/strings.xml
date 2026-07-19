@@ -34,4 +34,5 @@
     <string name="heading_user_details">Enter your details</string>
     <string name="label_goal_weight">What is your goal weight?</string>
     <string name="label_current_weight">How much do you weigh right now?</string>
+    <string name="logout">Logout</string>
 </resources>
