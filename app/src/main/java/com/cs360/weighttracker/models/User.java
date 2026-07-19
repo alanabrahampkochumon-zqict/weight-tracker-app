@@ -6,24 +6,26 @@ import androidx.annotation.Nullable;
 
 /**
  * Model representing a user.
+ *
+ * @apiNote Password is stored as a hash and is immutable after creation.
  */
 public class User {
 
-    String username;
-    String password;
+    private String username;
+    private String hashedPassword;
 
 
     /**
      * Constructs a username and password
      *
-     * @param username The user's username
-     * @param password The user's password
+     * @param username The user's username.
+     * @param password The user's password in hashed form.
      * @apiNote Passwords must not be stored in plain text.
      * Use helper provided in `PasswordHasher` to hash the password for storage.
      */
     public User(String username, String password) {
         this.username = username;
-        this.password = password;
+        this.hashedPassword = password;
     }
 
 
@@ -40,7 +42,7 @@ public class User {
 
         // If they are equal then compare their username and password
         User user = (User) obj;
-        return this.username.equals(user.username) && this.password.equals(user.password);
+        return this.username.equals(user.username) && this.hashedPassword.equals(user.hashedPassword);
     }
 
     /**
@@ -53,5 +55,23 @@ public class User {
     @Override
     public String toString() {
         return "Username = " + username;
+    }
+
+
+    /// ////////////////////////
+    ///       GETTERS      ///
+    /// ///////////////////////
+
+    public String getUserName() {
+        return username;
+    }
+
+
+    /// ////////////////////////
+    ///       SETTERS      ///
+    /// ///////////////////////
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
