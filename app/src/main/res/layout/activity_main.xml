@@ -11,10 +11,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
         android:text="@string/greeting"
         android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,5 +67,18 @@
         app:spanCount="2"
         tools:itemCount="12"
         tools:listitem="@layout/weight_item" />
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:contentDescription="@string/go_to_profile_page"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/account_icon"
+        app:tint="@color/slate_600" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

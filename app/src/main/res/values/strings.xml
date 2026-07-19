@@ -37,4 +37,5 @@
     <string name="logout">Logout</string>
     <string name="name_error">Name cannot be empty!</string>
     <string name="weight_error">Weight must be between 1 and 650</string>
+    <string name="go_to_profile_page">Go to Profile page</string>
 </resources>
