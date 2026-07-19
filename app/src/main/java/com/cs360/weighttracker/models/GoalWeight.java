@@ -6,11 +6,11 @@ package com.cs360.weighttracker.models;
  */
 public class GoalWeight {
 
-    private float goalWeight, targetWeight;
+    private float goalWeight, currentWeight;
 
-    GoalWeight(float goalWeight, float targetWeight) {
+    GoalWeight(float goalWeight, float currentWeight) {
         this.goalWeight = goalWeight;
-        this.targetWeight = targetWeight;
+        this.currentWeight = currentWeight;
     }
 
 
@@ -21,8 +21,8 @@ public class GoalWeight {
         return goalWeight;
     }
 
-    public float getTargetWeight() {
-        return targetWeight;
+    public float getCurrentWeight() {
+        return currentWeight;
     }
 
     ///////////////////////////
@@ -32,17 +32,17 @@ public class GoalWeight {
         this.goalWeight = goalWeight;
     }
 
-    public void setTargetWeight(float targetWeight) {
-        this.targetWeight = targetWeight;
+    public void setCurrentWeight(float currentWeight) {
+        this.currentWeight = currentWeight;
     }
 
     /**
      * Returns user goals given the current goal and target weights.
      */
     public GoalType getJourneyType() {
-        if (targetWeight > goalWeight) {
+        if (currentWeight > goalWeight) {
             return GoalType.WEIGHT_GAIN;
-        } else if (targetWeight < goalWeight) {
+        } else if (currentWeight < goalWeight) {
             return GoalType.WEIGHT_LOSS;
         } else {
             return GoalType.WEIGHT_MAINTAIN;

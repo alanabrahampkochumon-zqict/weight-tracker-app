@@ -28,6 +28,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgIllustrationHero" />
 
+    <TextView
+        android:id="@+id/tvMotto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/text_motto"
+        android:textSize="12sp"
+        android:paddingTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogo" />
+
     <LinearLayout
         android:id="@+id/usernameLayout"
         android:layout_width="match_parent"
@@ -39,7 +52,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLogo">
+        app:layout_constraintTop_toBottomOf="@+id/tvMotto">
 
         <TextView
             android:id="@+id/labelUsername"
