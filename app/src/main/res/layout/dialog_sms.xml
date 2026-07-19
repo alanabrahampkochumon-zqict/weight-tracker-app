@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -19,10 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="To receive notification when you reach your goals, enable the SMS permission!"
+        android:text="@string/goal_alerts"
         android:textColor="@color/slate_900"
-        android:textSize="14sp"
-        />
+        android:textSize="14sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,14 +36,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/slate_100"
-            android:text="Cancel"
-            android:textColor="@color/slate_700"/>
+            android:text="@string/cancel"
+            android:textColor="@color/slate_700" />
 
         <Button
             android:id="@+id/btnSMSPermissionGrant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Submit" />
+            android:text="@string/enable_now" />
     </LinearLayout>
 </LinearLayout>
