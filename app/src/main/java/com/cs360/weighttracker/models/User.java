@@ -18,6 +18,8 @@ public class User {
      *
      * @param username The user's username
      * @param password The user's password
+     * @apiNote Passwords must not be stored in plain text.
+     * Use helper provided in `PasswordHasher` to hash the password for storage.
      */
     public User(String username, String password) {
         this.username = username;
