@@ -58,18 +58,21 @@ public class User {
     }
 
 
-    ///////////////////////////
+    /// ////////////////////////
     ///       GETTERS      ///
-    //////////////////////////
+    /// ///////////////////////
 
     public String getUserName() {
         return username;
     }
 
+    public String getHashedPassword() {
+        return hashedPassword;
+    }
 
-    ///////////////////////////
+    /// ////////////////////////
     ///       SETTERS      ///
-    //////////////////////////
+    /// ///////////////////////
 
     public void setUsername(String username) {
         this.username = username;
