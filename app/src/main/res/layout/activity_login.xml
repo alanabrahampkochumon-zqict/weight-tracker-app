@@ -9,10 +9,10 @@
         android:id="@+id/imgIllustrationHero"
         android:layout_width="wrap_content"
         android:layout_height="280dp"
+        android:contentDescription="@string/alt_hero_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/alt_hero_image"
         app:srcCompat="@drawable/hero_image" />
 
     <TextView
@@ -35,6 +35,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:maxWidth="320dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +45,7 @@
             android:id="@+id/labelUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:labelFor="@id/textUsername"
             android:text="@string/username" />
 
         <EditText
@@ -52,17 +54,18 @@
             android:layout_height="wrap_content"
             android:autofillHints="username"
             android:ems="10"
-            android:hint="@string/hint_username"
             android:inputType="text"
+            android:maxWidth="320dp"
             android:minHeight="48dp" />
         <!-- TODO: Update visibility to Gone -->
         <!-- android:visibility="gone" -->
         <TextView
+            android:id="@+id/tvAccountError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/invalid_username"
             android:textAlignment="textEnd"
-            android:textColor="@color/red_400"
+            android:textColor="@color/red_600"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -82,6 +85,7 @@
             android:id="@+id/labelPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:labelFor="@id/textPassword"
             android:text="@string/password" />
 
         <EditText
@@ -96,11 +100,12 @@
         <!-- TODO: Update visibility to Gone -->
         <!-- android:visibility="gone" -->
         <TextView
+            android:id="@+id/tvPasswordError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/incorrect_password"
             android:textAlignment="textEnd"
-            android:textColor="@color/red_400"
+            android:textColor="@color/red_600"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -128,8 +133,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/primary_50"
+            android:maxWidth="320dp"
             android:text="@string/createAccount"
-            android:textColor="@color/primary_500" />
+            android:textColor="@color/primary_600" />
     </LinearLayout>
 
 

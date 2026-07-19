@@ -29,27 +29,37 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:labelFor="@id/etFullName"
             android:text="@string/label_fullname"
-            android:textSize="14sp"
-            android:textColor="@color/slate_800"/>
+            android:textColor="@color/slate_800"
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/etFullName"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="12dp"
             android:autofillHints="none"
-            android:hint="@string/hint_fullname"
             android:inputType="number" />
+
+        <!-- TODO: Update visibility to Gone -->
+        <!-- android:visibility="gone" -->
+        <TextView
+            android:id="@+id/tvNameError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_error"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red_600"
+            android:textSize="12sp" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layoutCurrentWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:baselineAligned="true"
         android:layout_marginTop="24dp"
+        android:baselineAligned="true"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="@id/layoutName"
@@ -59,6 +69,7 @@
             android:id="@+id/tvLabelCurrentWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:labelFor="@id/etCurrentWeight"
             android:text="@string/label_current_weight"
             android:textColor="@color/slate_800"
             android:textSize="14sp"
@@ -73,7 +84,6 @@
             android:layout_marginEnd="12dp"
             android:layout_weight="1"
             android:autofillHints="none"
-            android:hint="@string/weight_hint"
             android:inputType="number"
             app:layout_constraintEnd_toStartOf="@id/tvCurrentWeightUnit"
             app:layout_constraintStart_toStartOf="@+id/tvLabelCurrentWeight"
@@ -88,6 +98,20 @@
             app:layout_constraintBottom_toBottomOf="@id/etCurrentWeight"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/etCurrentWeight" />
+
+        <!-- TODO: Update visibility to Gone -->
+        <!-- android:visibility="gone" -->
+        <TextView
+            android:id="@+id/tvCurrentWeightError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/weight_error"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red_600"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/tvCurrentWeightUnit"
+            app:layout_constraintTop_toBottomOf="@id/tvCurrentWeightUnit" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -107,6 +131,7 @@
             android:id="@+id/tvLabelGoalWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:labelFor="@id/etGoalWeight"
             android:text="@string/label_goal_weight"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +145,6 @@
             android:layout_marginEnd="12dp"
             android:layout_weight="1"
             android:autofillHints="none"
-            android:hint="@string/weight_hint"
             android:inputType="number"
             app:layout_constraintEnd_toStartOf="@id/tvGoalWeightUnit"
             app:layout_constraintStart_toStartOf="@+id/tvLabelGoalWeight"
@@ -136,13 +160,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/etGoalWeight" />
 
+        <!-- TODO: Update visibility to Gone -->
+        <!-- android:visibility="gone" -->
+        <TextView
+            android:id="@+id/tvGoalWeightError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/weight_error"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red_600"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/tvGoalWeightUnit"
+            app:layout_constraintTop_toBottomOf="@id/tvGoalWeightUnit" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxWidth="320dp"
         android:layout_marginTop="40dp"
+        android:maxWidth="320dp"
         android:text="@string/get_started"
         app:layout_constraintEnd_toEndOf="@id/layoutGoalWeight"
         app:layout_constraintStart_toStartOf="@id/layoutGoalWeight"

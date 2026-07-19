@@ -35,4 +35,6 @@
     <string name="label_goal_weight">What is your goal weight?</string>
     <string name="label_current_weight">How much do you weigh right now?</string>
     <string name="logout">Logout</string>
+    <string name="name_error">Name cannot be empty!</string>
+    <string name="weight_error">Weight must be between 1 and 650</string>
 </resources>
