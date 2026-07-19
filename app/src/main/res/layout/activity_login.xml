@@ -71,8 +71,6 @@
             android:maxWidth="320dp"
             android:minHeight="48dp" />
 
-        <!-- TODO: Update visibility to Gone -->
-        <!-- android:visibility="gone" -->
         <TextView
             android:id="@+id/tvAccountError"
             android:layout_width="match_parent"
@@ -80,6 +78,7 @@
             android:text="@string/invalid_username"
             android:textAlignment="textEnd"
             android:textColor="@color/red_600"
+            android:visibility="gone"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -111,14 +110,13 @@
             android:inputType="textPassword"
             android:minHeight="48dp" />
 
-        <!-- TODO: Update visibility to Gone -->
-        <!-- android:visibility="gone" -->
         <TextView
             android:id="@+id/tvPasswordError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/incorrect_password"
             android:textAlignment="textEnd"
+            android:visibility="gone"
             android:textColor="@color/red_600"
             android:textSize="12sp" />
     </LinearLayout>

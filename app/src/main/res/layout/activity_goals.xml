@@ -50,6 +50,7 @@
             android:layout_height="wrap_content"
             android:text="@string/name_error"
             android:textAlignment="textEnd"
+            android:visibility="gone"
             android:textColor="@color/red_600"
             android:textSize="12sp" />
     </LinearLayout>
@@ -99,8 +100,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/etCurrentWeight" />
 
-        <!-- TODO: Update visibility to Gone -->
-        <!-- android:visibility="gone" -->
+
         <TextView
             android:id="@+id/tvCurrentWeightError"
             android:layout_width="match_parent"
@@ -110,6 +110,7 @@
             android:textAlignment="textEnd"
             android:textColor="@color/red_600"
             android:textSize="12sp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@id/tvCurrentWeightUnit"
             app:layout_constraintTop_toBottomOf="@id/tvCurrentWeightUnit" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -160,8 +161,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/etGoalWeight" />
 
-        <!-- TODO: Update visibility to Gone -->
-        <!-- android:visibility="gone" -->
         <TextView
             android:id="@+id/tvGoalWeightError"
             android:layout_width="match_parent"
@@ -171,6 +170,7 @@
             android:textAlignment="textEnd"
             android:textColor="@color/red_600"
             android:textSize="12sp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@id/tvGoalWeightUnit"
             app:layout_constraintTop_toBottomOf="@id/tvGoalWeightUnit" />
 
